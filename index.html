@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./assets/index.css">
+</head>
+<body>
+    <main>
+        <h2>Generator your Password!</h2>
+        <div class="displayPassword field">
+            <p id="displayPassword" style="text-align: left;">
+                Your password will be shown here!
+            </p>
+        </div>
+        <ul>
+            <li>
+                <input 
+                    type="number" 
+                    placeholder="Input Custom length"
+                    id="len"
+                    class="field"
+                >
+            </li>
+            <li>
+                <input 
+                    type="radio" 
+                    name="password" 
+                    id="simple"
+                    value="simple"
+                    checked
+                >
+
+                <label for="simple">
+                    Simple Password (10)
+                    
+                </label>
+            </li>
+            <li> 
+                <input 
+                    type="radio" 
+                    name="password" 
+                    id="strong"
+                    value="strong"
+                >
+
+                <label for="strong">
+                    Strong Password (13)
+                </label>
+            </li>
+            <li>  
+                <input 
+                    type="radio" 
+                    name="password" 
+                    id="superStrong"
+                    value="superStrong"
+                >
+
+                <label for="superStrong">
+                    Super Strong Password (15+)
+                </label>
+            </li>
+        </ul>
+
+        <button class="field" onclick="generate()">
+            Generate!
+        </button>
+    </main>
+
+    <script src="./assets/main.js"></script>
+</body>
+</html>

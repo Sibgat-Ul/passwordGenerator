@@ -1,0 +1,87 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    background-color: #f5f4ff;
+    height: 100vh;
+
+    font-kerning: auto;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    text-align: center;
+    border: 1px solid #9381ff;
+    border-radius: 15px;
+    background-color: #f8f7ff;
+    color: #7962fc;
+
+    height: 33em;
+    width: 29em;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1em;
+}
+
+.displayPassword {
+    margin: 2em auto auto;
+    color: #f8f7ff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 346px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    color: #f8f7ff;
+    max-width: 346px;
+    cursor: pointer;
+}
+
+li {
+    margin: 2em;
+    font-size: 21px;
+    text-align: left;
+}
+
+.field {
+    background-color: #9381ff;
+    outline: none;
+    border: none;
+    font-size: large;
+    border-radius: 10px;
+    height: 45px;
+    width: 100%;
+    padding: 0px 1em;
+}
+
+input.field {
+    cursor: text;
+}
+
+input[type=radio] {
+    accent-color: #9381ff;
+}
+
+::placeholder, input:focus {
+    color: #f8f7ff;
+}
+
+label > span {
+    font-size: 11px;
+}
