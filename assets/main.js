@@ -24,16 +24,19 @@ function getRandomSymbol() {
 let generate = () => {;
     let pass = "";
     let clicked = false;
-
+    let len = lenOfPass.value;
+    console.log(len)
     if (simple.checked){
-        for(let i = 0; i < 10; i++) {
+        len = len <= 0 ? 10 : len;
+        for(let i = 0; i < len; i++) {
             let typeArr = [getRandomLower(), getRandomUpper(), getRandomNumber()];
             pass += typeArr[Math.floor((Math.random() * 12) / 4)];
         }
     }
 
     if (strong.checked) {
-        for (let i = 0; i < 12; i++) {
+        len = len <= 0 ? 12 : len;
+        for (let i = 0; i < len; i++) {
             let typeArr = [
                 getRandomLower(),
                 getRandomUpper(),
@@ -45,7 +48,7 @@ let generate = () => {;
     }
     
     if (superStrong.checked){
-        let len = Math.floor((Math.random() * 50)) + 15
+        len = len <= 0 ? Math.floor(Math.random() * 50) + 15 : len;
         for (let i = 0; i < len; i++) {
             let typeArr = [
                 getRandomLower(),

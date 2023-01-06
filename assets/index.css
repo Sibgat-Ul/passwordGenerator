@@ -2,6 +2,14 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-size: 1em;
+}
+
+:root {
+    --background-col: #f8f7ff;
+    --font-col-b: #7962fc;
+    --font-col-w: #f8f7ff;
+    --border-col: #9381ff;
 }
 
 body {
@@ -9,6 +17,7 @@ body {
     background-color: #f5f4ff;
     height: 100vh;
 
+    
     font-kerning: auto;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -20,7 +29,7 @@ main {
     text-align: center;
     border: 1px solid #9381ff;
     border-radius: 15px;
-    background-color: #f8f7ff;
+    background-color: var(--background-col);
     color: #7962fc;
 
     height: 33em;
@@ -36,15 +45,17 @@ main {
 .displayPassword {
     margin: 2em auto auto;
     color: #f8f7ff;
-
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 346px;
+    overflow: auto;
 }
 
 ul {
     list-style-type: none;
+    width: 100%;
 }
 
 button {
@@ -55,7 +66,6 @@ button {
 
 li {
     margin: 2em;
-    font-size: 21px;
     text-align: left;
 }
 
@@ -63,7 +73,6 @@ li {
     background-color: #9381ff;
     outline: none;
     border: none;
-    font-size: large;
     border-radius: 10px;
     height: 45px;
     width: 100%;
