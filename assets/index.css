@@ -6,61 +6,81 @@
 }
 
 :root {
-    --background-col: #f8f7ff;
-    --font-col-b: #7962fc;
-    --font-col-w: #f8f7ff;
-    --border-col: #9381ff;
+    --background-col-w: #fff9f5;
+    --sec-bg-col-w: #071d2b;
+    --font-sec: #C2640C;
+    --prim: #0070f6;
 }
 
 body {
     position: relative;
-    background-color: #f5f4ff;
+    background-color: var(--background-col-w);
     height: 100vh;
-
-    
+    color: var(--sec-bg-col-w);
     font-kerning: auto;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2em;
 }
 
 main {
     text-align: center;
-    border: 1px solid #9381ff;
     border-radius: 15px;
-    background-color: var(--background-col);
-    color: #7962fc;
+    width: 100%;
+    max-width: 480px;
+    margin: auto;
+}
 
-    height: 33em;
-    width: 29em;
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 1em;
+h2 {
+    font-size: 1.5em;
+    margin: 1em auto;
+}
+
+.dis {
+    display: grid;
+    grid-template-columns: minmax(1fr, auto) 1fr;
+    gap: .5em;
 }
 
 .displayPassword {
-    margin: 2em auto auto;
-    color: #f8f7ff;
+    margin: auto;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 346px;
     overflow: auto;
+    background: #ffffff;
+    border: 1px solid #161616;
+    border-radius: 10px;
+    height: 45px;
+    width: 100%;
+}
+
+button.copybtn {
+    width: 2em;
+    height: 2em;
+    padding:2px;
+}
+
+button > img{
+    width: 1.5em;
+    height: 100%;
+    margin: auto;
 }
 
 ul {
     list-style-type: none;
     width: 100%;
+    font-size: .9rem;
+    max-width: 270px;
+    margin: auto;
 }
 
 button {
     color: #f8f7ff;
-    max-width: 346px;
     cursor: pointer;
 }
 
@@ -70,21 +90,26 @@ li {
 }
 
 .field {
-    background-color: #9381ff;
     outline: none;
     border: none;
     border-radius: 10px;
-    height: 45px;
+    height: 2.8em;
     width: 100%;
+    max-width: 12.5em;
     padding: 0px 1em;
+    margin: auto;
+    font-size: .9rem;
+    text-align: center;
 }
 
-input.field {
-    cursor: text;
+button, input {
+    background-color: var(--prim);
+    max-width: 240px;
+    margin: auto;
 }
 
 input[type=radio] {
-    accent-color: #9381ff;
+    accent-color: var(--prim);
 }
 
 ::placeholder, input:focus {

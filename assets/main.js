@@ -65,7 +65,7 @@ let generate = () => {;
 }
 
 function copyPassword() {
-    var copyText = document.getElementById("password");
-    copyText.select();
-    document.execCommand("copy");
+    let text = display.innerText;
+    navigator.clipboard.writeText(text)
+    alert("Password Copied!")
 }

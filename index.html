@@ -7,16 +7,21 @@
     <title>Password Generator</title>
     <link rel="stylesheet" href="./assets/index.css">
 </head>
-<body>
+<body class="dark">
     <main>
-        <h2>Generator your Password!</h2>
-        <div class="displayPassword field">
-            <p id="displayPassword" style="text-align: left;">
-                Your password will be shown here!
-            </p>
+        <h2>Generate Your New Password!</h2>
+        <div class="dis">
+            <div class="displayPassword">
+                <p id="displayPassword" style="text-align: left;">
+                    Your password will be shown here!
+                </p>
+            </div>
+            <button onclick="copyPassword()" class="copybtn field">
+                <img src="/assets/clipboard-list-solid.svg" alt="copy">
+            </button>
         </div>
         <ul>
-            <li>
+            <li style="text-align: center;">
                 <input 
                     type="number" 
                     placeholder="Input Custom length"
