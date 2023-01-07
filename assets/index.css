@@ -28,14 +28,20 @@ body {
 main {
     text-align: center;
     border-radius: 15px;
+    min-width: 10em;
     width: 100%;
-    max-width: 480px;
+    max-width: 35em;
     margin: auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
 h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     margin: 1em auto;
 }
 
@@ -54,10 +60,11 @@ h2 {
     background: #ffffff;
     border: 1px solid #161616;
     border-radius: 10px;
-    height: 45px;
+    height: 3em;
     max-width: 100%;
     width: 95%;
     min-width: 10em;
+    font-size: 1.5rem;
 }
 
 button.copybtn {
@@ -74,9 +81,9 @@ button > img{
 
 ul {
     list-style-type: none;
-    width: 100%;
-    font-size: .9rem;
-    max-width: 270px;
+    width: 25em;
+    font-size: 1.4rem;
+    max-width: 15em;
     margin: auto;
 }
 
@@ -86,26 +93,26 @@ button {
 }
 
 li {
-    margin: 2em;
+    margin: 2em auto;
     text-align: left;
+    width: 15em;
 }
 
 .field {
     outline: none;
     border: none;
     border-radius: 10px;
-    height: 2.8em;
+    height: 2.2em;
     width: 100%;
-    max-width: 12.5em;
+    max-width: 12em;
     padding: 0px 1em;
     margin: auto;
-    font-size: .9rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
 button, input {
     background-color: var(--prim);
-    max-width: 240px;
     margin: auto;
 }
 
@@ -120,3 +127,4 @@ input[type=radio] {
 label > span {
     font-size: 11px;
 }
+
